@@ -1,4 +1,6 @@
 import mongoose, {ConnectOptions} from 'mongoose';
+import "dotenv/config";
+
 const MONGO_URI = process.env.MONGO_URI || "";
 if (!MONGO_URI.length) {
     throw new Error(
